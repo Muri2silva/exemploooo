@@ -1,0 +1,75 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+    font-family: 'destaque';
+    src: url(./DeadBitch-Regular.ttf)format('opentype');
+}
+:root{
+        --cor0: #000000;
+        --cor1: #d5002b;
+        --cor2: #ff0000;
+        --cor3: #ffffff;
+        --cor4: #00000062; 
+        --cor5: #ffee00;
+
+    --fonte--destaque: 'destaque';
+    --fonte--normal: arial, helvetica, sans-serif;
+}
+
+
+body{
+    background-color: var(--cor3);
+    margin: auto;
+}
+
+header{
+    background-color: var(--cor1);
+    text-align: center;
+    height: 110px;
+    padding-top: 20px;
+    
+    
+}
+header h1{
+    font-family: 'destaque';
+    font-size: 3em;
+    font-weight: bolder;
+}
+header p {
+    max-width: 800px;
+    margin: auto;
+    color: var(--cor3);
+}
+nav{
+    background-color: var(--cor1);
+    color: var(--cor0);
+    padding: 10px;
+}
+nav a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--cor0);
+    font-family: var(--fonte--normal);
+    margin: 1px;
+    padding: 9px;
+}
+nav a:hover{
+    background-color:  var(--cor4);
+    color: var(--cor3);
+    transition-duration: 0.8s;
+    border-radius: 5px;
+}
+main{
+    background-color: black;
+    height: 1150px;
+    max-width: 1800px;
+    margin: auto;
+}
+#logo{
+    display: block;
+    height: 500px;
+    opacity: 0.2;
+    margin: auto;
